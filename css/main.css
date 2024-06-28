@@ -132,7 +132,7 @@ footer{
   }
   @media (max-width: 767.98px) { /* Adjust the breakpoints as needed */
       .overlay-content h1 {
-          font-size: 1.5rem;
+          font-size: 15px;
       }
       .overlay-content h2 {
           font-size: 1rem;
@@ -174,7 +174,9 @@ footer{
   }
 
   .new-version{
-      background: linear-gradient(to bottom, #f27931, #d86c2c, #be5f26, #a45221 70%);
+      /* background: linear-gradient(to bottom, #f27931, #d86c2c, #be5f26, #a45221 70%); */
+      background-color: #D9D9D9;
+      border: 0.7rem solid #be5f26;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       padding: 1rem;
     }
