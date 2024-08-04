@@ -244,15 +244,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // main image gallery
 
-   function openUniqueFullScreen(imageSrc) {
-      var fullScreenImage = document.querySelector('.unique-full-screen img');
-      fullScreenImage.src = imageSrc;
-      document.querySelector('.unique-full-screen').classList.add('active');
-    }
+ function openUniqueFullScreen(imageSrc) {
+    var fullScreenImage = document.querySelector('.unique-full-screen img');
+    fullScreenImage.src = imageSrc;
+    document.querySelector('.unique-full-screen').classList.add('active');
+}
 
-    function closeUniqueFullScreen() {
-      document.querySelector('.unique-full-screen').classList.remove('active');
-    }
+function closeUniqueFullScreen() {
+    document.querySelector('.unique-full-screen').classList.remove('active');
+}
+
 
 
     // reveal
@@ -299,7 +300,10 @@ var modal = document.getElementById("modal");
 var modalImg = document.getElementById("modal-img");
 
 function openModal(image) {
-    modal.style.display = "block";
+    if (window.innerWidth < 768) { // Check if the screen width is less than 768px
+        return; // Do nothing on mobile devices
+    }
+    modal.style.display = "flex"; // Ensure display is flex
     modalImg.src = image.src;
 }
 
@@ -309,10 +313,10 @@ function closeModal() {
 
 document.addEventListener("click", function(event) {
     if (event.target.classList.contains("gallery-item")) {
-        modal.style.display = "block";
-        modalImg.src = event.target.src;
+        openModal(event.target);
     }
 });
+
 
 
 // reviews
