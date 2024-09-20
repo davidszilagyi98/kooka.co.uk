@@ -271,16 +271,29 @@ function closeUniqueFullScreen() {
 // gallery page
 
 function filterImages(category) {
-    var images = document.getElementsByClassName("gallery-item");
+    var containers = document.querySelectorAll(".gallery-page-container");
 
-    for (var i = 0; i < images.length; i++) {
-        if (images[i].classList.contains(category)) {
-            images[i].style.display = "block";
-        } else {
-            images[i].style.display = "none";
+    containers.forEach(container => {
+        var images = container.getElementsByClassName("gallery-item");
+        var hasVisibleImages = false;
+
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].classList.contains(category)) {
+                images[i].style.display = "block";
+                hasVisibleImages = true;
+            } else {
+                images[i].style.display = "none";
+            }
         }
-    }
-    
+
+        // Hide or show the entire container based on the visibility of its images
+        if (hasVisibleImages) {
+            container.style.display = "block";
+        } else {
+            container.style.display = "none";
+        }
+    });
+
     // Update active button
     var buttons = document.querySelectorAll(".gallery-controls button");
     buttons.forEach(button => {
@@ -295,6 +308,7 @@ function filterImages(category) {
 window.onload = function() {
     filterImages('nature');
 }
+
 
 var modal = document.getElementById("modal");
 var modalImg = document.getElementById("modal-img");
@@ -367,3 +381,5 @@ document.addEventListener("click", function(event) {
         });
     });
 
+ 
+      

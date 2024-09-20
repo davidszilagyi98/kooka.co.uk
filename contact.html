@@ -16,7 +16,7 @@
  <div class="d-flex align-items-center justify-content-center justify-content-lg-end pe-lg-5 gap-5 py-3 px-2 position-relative" style="background-color:#f27931">
     <h6 class="d-none d-lg-block position-absolute start-0 ms-5 mb-0 fs-4" style="color: white;">Ready to elevate your upcoming project?</h6>
     <a href="./contact.html#form" class="text-decoration-none">
-        <button class="cta-button py-2"><i class="fa-regular fa-file-lines me-3"></i>Get a free quote</button>
+        <button class="cta-button-secondary py-2"><i class="fa-regular fa-file-lines me-3"></i>Get a free quote</button>
     </a>
     <a href="tel:01933 717129" class="social-link" style="color: black; cursor: pointer;">
         <button class="cta-button-secondary py-2"><i class="fa-solid fa-phone me-3"></i>Call us: 01933 717129</button>
@@ -53,29 +53,29 @@
               </a>
                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                   <li><a class="dropdown-item" href="/commercial.html">Commercial</a></li>
-                  <li><a class="dropdown-item" href="/social-housing.html">Social housing</a></li>
-                  <li><a class="dropdown-item" href="/new-build.html">New build</a></li>
+                  <li><a class="dropdown-item" href="/social-housing.html">Social Housing</a></li>
+                  <li><a class="dropdown-item" href="/new-build.html">New Build</a></li>
                   <li><a class="dropdown-item" href="/funding.html">Funding</a></li>
-                  <li><a class="dropdown-item" href="/public-sector.html">Public sector</a></li>
+                  <li><a class="dropdown-item" href="/public-sector.html">Public Sector</a></li>
                   <li><a class="dropdown-item" href="/homeowners.html">Homeowners</a></li>
               </ul>
           </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Our company
+                  Our Company
                 </a>
                 <ul class="dropdown-menu">
-                   <li><a class="dropdown-item" href="/about-us.html">About us</a></li>
-                  <li><a class="dropdown-item" href="/faq.html">FAQ</a></li>
-                  <li><a class="dropdown-item" href="/certificates.html">Certificates</a></li>
+                   <li><a class="dropdown-item" href="/about-us.html">About Us</a></li>
+                  <!-- <li><a class="dropdown-item" href="/faq.html">FAQ</a></li> -->
+                  <li><a class="dropdown-item" href="/accreditations.html">Accreditations</a></li>
                   <li><a class="dropdown-item" href="/reviews.html">Reviews</a></li>
                   <li><a class="dropdown-item" href="/locations.html">Locations</a></li>
-                  <li><a class="dropdown-item" href="/finance.html">Finance</a></li>
+                  <!-- <li><a class="dropdown-item" href="/finance.html">Finance</a></li> -->
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/contact.html" role="button" aria-expanded="false">
-                  Contact us
+                  Contact Us
                 </a>
               </li>
               <li class="nav-item">
@@ -85,12 +85,12 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/case-studies.html" role="button" aria-expanded="false">
-                  Case studies
+                  Case Studies
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/our-products.html" role="button" aria-expanded="false">
-                  Our products
+                  Our Products
                 </a>
               </li>
             </ul>
@@ -101,7 +101,11 @@
 <body>
 
     <section class="image-container">
-    <img src="./img/Screenshot 2024-05-30 at 21.54.15.png" class="img-fluid" style=" filter: brightness(50%); opacity: 0.9;" alt="Responsive image">
+      <video src="./img/WhatsApp Video 2024-09-07 at 20.44.38.mp4" 
+      autoplay 
+      loop 
+      width="100%" 
+      style="max-height: 500px; width: 100%; object-fit: cover;"></video>
     <div class="overlay-content">
             <h1 class="fs-1">Contact</h1>
             <a href="./contact.html#form">
@@ -111,10 +115,13 @@
       </section>
       
       <div class="container my-5 reveal" id="form">
-        <div class="row justify-content-center align-items-center">
+        <div class="row justify-content-center">
           <div class="col-md-6 col-sm-12 text-center">
             <img src="./img/Kooka - Logo 2020.webp" class="w-50 mb-4 mx-auto">
-            <p>We would love to hear from you, fill out the contact form and someone will get back to you shortly. Alternatively, you can give us a call or drop us a direct email!</p>
+            <p>We would love to hear from you, fill out the contact form and someone will get back to you shortly. Alternatively, you can give us a call,  <a href="https://wa.me/441933717129" target="_blank">send a whatsapp</a> or drop us a direct email!</p>
+            <img src="./img/kookacouk-images/image005.png" class="w-50 mb-4 mx-auto">
+            <img src="./img/download.jpeg" class="w-50 mb-4 mx-auto">
+            <img src="./img/kookacouk-images/INCA_Members%20Logo_CMYK.png" class="w-50 mb-4 mx-auto">
           </div>
           <div class="col-md-6">
             <div class="card">
@@ -124,8 +131,12 @@
               <div class="card-body">
                 <form>
                   <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    <label for="firstname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="Enter your first name" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="lastname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Enter your last name" required>
                   </div>
                   <div class="mb-3">
                     <label for="email" class="form-label">Email Address</label>
@@ -139,6 +150,10 @@
                   <div class="mb-3">
                     <label for="address" class="form-label">Full Address</label>
                     <input type="text" class="form-control" id="address" placeholder="Enter your address" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="postcode" class="form-label">Postcode</label>
+                    <input type="text" class="form-control" id="postcode" placeholder="Enter your postcode" required>
                   </div>
                   <div class="mb-3">
                     <label for="service" class="form-label">Type Of Service</label>
@@ -182,13 +197,13 @@
       
 
 
-    <div class="fixed-box" id="testimonialBox">
+  <div class="fixed-box" id="testimonialBox" style="z-index: 3;">
       <button class="close-btn" id="closeBtn">&times;</button>
       <a href="https://www.checkatrade.com/trades/kookadevelopmentsltd" style="text-decoration: none; color: white;">
         <div class="testimonial-content">
           <div class="me-3">
             <img src="./img/images.png" class="box-bottom-img">
-            <p class="mt-3" style="font-size: small;">Total of 320 reviews</p>
+            <p class="mt-3" style="font-size: small;">380+ Reviews</p>
           </div>
           <div>
             <div id="starsContainer"></div>
@@ -210,7 +225,7 @@
                   <p class="footer-link">10-11 William's Way, Wollaston, Wellingborough NN29 7RQ</p>
                   </div>
                   </a>
-                  <a href="info@kooka.co.uk" target="_blank" class="social-link" style="color: black; cursor: pointer;">
+                  <a href="mailto:info@kooka.co.uk" target="_blank" class="social-link" style="color: black; cursor: pointer;">
                   <div class="d-flex gap-3">
                       <i class="fa-solid fa-envelope"></i>
                       <p class="footer-link">info@kooka.co.uk</p>
@@ -247,16 +262,16 @@
                   <a href="./case-studies.html" style="text-decoration: none; color: black;">
                   <h6 class="footer-link">Case Studies</h6>
                   </a>
-                  <a href="./our-products.html" style="text-decoration: none; color: black;">
-                    <h6 class="footer-link">Our Products</h6>
-                    </a>
                 </div>
                   <div>
-                      <a href="./faq.html" style="text-decoration: none; color: black;">
-                        <h6 class="footer-link">FAQ</h6>
-                        </a>
-                        <a href="./certificates.html" style="text-decoration: none; color: black;">
-                          <h6 class="footer-link">Certificates</h6>
+                      <!-- <a href="./faq.html" style="text-decoration: none; color: black;">
+                    <h6 class="footer-link">FAQ</h6>
+                    </a> -->
+                    <a href="./our-products.html" style="text-decoration: none; color: black;">
+                      <h6 class="footer-link">Our Products</h6>
+                      </a>
+                        <a href="./accreditations.html" style="text-decoration: none; color: black;">
+                          <h6 class="footer-link">Accreditations</h6>
                           </a>
                           <a href="./reviews.html" style="text-decoration: none; color: black;">
                             <h6 class="footer-link">Reviews</h6>
@@ -264,9 +279,9 @@
                             <a href="./locations.html" style="text-decoration: none; color: black;">
                               <h6 class="footer-link">Locations</h6>
                               </a>
-                              <a href="./finance.html" style="text-decoration: none; color: black;">
-                                <h6 class="footer-link">Finance</h6>
-                                </a>
+                              <!-- <a href="./finance.html" style="text-decoration: none; color: black;">
+                            <h6 class="footer-link">Finance</h6>
+                            </a> -->
                               </div>
                             </div>
               </div>
@@ -309,6 +324,12 @@
                   </a>
                   <a class="social-link" target="_blank" href="https://www.linkedin.com/company/kooka-developments/">
                   <i class="fa-brands fa-linkedin mx-3" style="font-size: 3rem; color: #f27931; cursor: pointer;"></i>
+                  </a>
+                  <a href="https://wa.me/441933717129" target="_blank">
+                    <i class="fa-brands fa-whatsapp mx-3" style="font-size: 3rem; color: #f27931; cursor: pointer;"></i>
+                  </a>            
+                    <a class="social-link" target="_blank" href="https://g.co/kgs/kswTyzd">
+                      <i class="fa-brands fa-google mx-3" style="font-size: 3rem; color: #f27931; cursor: pointer;"></i>
                   </a>
                   </div>
                   <!-- Add your social media links here -->
