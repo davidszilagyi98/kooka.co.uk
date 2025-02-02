@@ -381,5 +381,18 @@ document.addEventListener("click", function(event) {
         });
     });
 
- 
-      
+
+    // Google Analytics 4 tracking code
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function() {
+    var script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-R8MHBBJL7P'; // Replace with your Measurement ID
+    script.async = true;
+    document.head.appendChild(script);
+    
+    gtag('js', new Date());
+    gtag('config', 'G-R8MHBBJL7P'); // Replace with your Measurement ID
+})();
+
+    

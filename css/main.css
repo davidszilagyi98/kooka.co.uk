@@ -283,7 +283,7 @@ footer{
 }
 
 #infinite ul.highway-lane {
-  width: calc(300px * 15); /* Adjusted for the total number of items */
+  width: calc(300px * 16); /* Adjusted for the total number of items */
   padding: 0;
   margin: 0;
   display: flex;
@@ -644,3 +644,9 @@ footer{
     display: none;
 }
 
+
+  @media(max-width: 991px) {
+    .bg-logo {
+        display: none;
+    }
+}
